@@ -1,0 +1,1406 @@
+[
+  {
+    "kanji": "大きい",
+    "reading": "ookii",
+    "meaning": "big"
+  },
+  {
+    "kanji": "歩く",
+    "reading": "aruku",
+    "meaning": "walk"
+  },
+  {
+    "kanji": "走る",
+    "reading": "hashiru",
+    "meaning": "run"
+  },
+  {
+    "kanji": "近く",
+    "reading": "chikaku",
+    "meaning": "near/close by"
+  },
+  {
+    "kanji": "会う",
+    "reading": "au",
+    "meaning": "meet"
+  },
+  {
+    "kanji": "場合",
+    "reading": "baai",
+    "meaning": "situation"
+  },
+  {
+    "kanji": "車",
+    "reading": "kuruma",
+    "meaning": "car"
+  },
+  {
+    "kanji": "近い",
+    "reading": "chikai",
+    "meaning": "close"
+  },
+  {
+    "kanji": "遠い",
+    "reading": "tooi",
+    "meaning": "far"
+  },
+  {
+    "kanji": "仕事",
+    "reading": "shigoto",
+    "meaning": "job"
+  },
+  {
+    "kanji": "少し",
+    "reading": "sukoshi",
+    "meaning": "little"
+  },
+  {
+    "kanji": "上る",
+    "reading": "noboru",
+    "meaning": "climb"
+  },
+  {
+    "kanji": "出す",
+    "reading": "dasu",
+    "meaning": "put out"
+  },
+  {
+    "kanji": "広い",
+    "reading": "hiroi",
+    "meaning": "wide"
+  },
+  {
+    "kanji": "短い",
+    "reading": "mijikai",
+    "meaning": "short(in length)"
+  },
+  {
+    "kanji": "全部",
+    "reading": "zenbu",
+    "meaning": "all"
+  },
+  {
+    "kanji": "休む",
+    "reading": "yasumu",
+    "meaning": "to have a break/take day off"
+  },
+  {
+    "kanji": "国",
+    "reading": "kuni",
+    "meaning": "country"
+  },
+  {
+    "kanji": "白い",
+    "reading": "shiroi",
+    "meaning": "white"
+  },
+  {
+    "kanji": "赤い",
+    "reading": "akai",
+    "meaning": "red"
+  },
+  {
+    "kanji": "部屋",
+    "reading": "heya",
+    "meaning": "room"
+  },
+  {
+    "kanji": "米",
+    "reading": "kome",
+    "meaning": "rice"
+  },
+  {
+    "kanji": "人",
+    "reading": "hito",
+    "meaning": "person"
+  },
+  {
+    "kanji": "未だ",
+    "reading": "mada",
+    "meaning": "yet"
+  },
+  {
+    "kanji": "行く",
+    "reading": "iku",
+    "meaning": "go"
+  },
+  {
+    "kanji": "有る",
+    "reading": "aru",
+    "meaning": "exist/have"
+  },
+  {
+    "kanji": "無い",
+    "reading": "nai",
+    "meaning": "doesn't exist, dont have/opposite of 有る"
+  },
+  {
+    "kanji": "作る",
+    "reading": "tsukuru",
+    "meaning": "make"
+  },
+  {
+    "kanji": "使う",
+    "reading": "tsukau",
+    "meaning": "use"
+  },
+  {
+    "kanji": "消す",
+    "reading": "kesu",
+    "meaning": "switch off"
+  },
+  {
+    "kanji": "春",
+    "reading": "haru",
+    "meaning": "spring"
+  },
+  {
+    "kanji": "店",
+    "reading": "mise",
+    "meaning": "shop/store"
+  },
+  {
+    "kanji": "夏",
+    "reading": "natsu",
+    "meaning": "summer"
+  },
+  {
+    "kanji": "秋",
+    "reading": "aki",
+    "meaning": "autumn"
+  },
+  {
+    "kanji": "冬",
+    "reading": "fuyu",
+    "meaning": "winter"
+  },
+  {
+    "kanji": "体",
+    "reading": "karada",
+    "meaning": "body"
+  },
+  {
+    "kanji": "暑い",
+    "reading": "atsui",
+    "meaning": "hot(temperature)"
+  },
+  {
+    "kanji": "熱い",
+    "reading": "atsui",
+    "meaning": "hot (something you feel)"
+  },
+  {
+    "kanji": "寒い",
+    "reading": "samui",
+    "meaning": "cold"
+  },
+  {
+    "kanji": "暖かい",
+    "reading": "atatakai",
+    "meaning": "warm"
+  },
+  {
+    "kanji": "新しい",
+    "reading": "atarashii",
+    "meaning": "new"
+  },
+  {
+    "kanji": "古い",
+    "reading": "furui",
+    "meaning": "old"
+  },
+  {
+    "kanji": "悪い",
+    "reading": "warui",
+    "meaning": "bad"
+  },
+  {
+    "kanji": "良い",
+    "reading": "ii",
+    "meaning": "good"
+  },
+  {
+    "kanji": "思う",
+    "reading": "omou",
+    "meaning": "think/think so(opinionated)"
+  },
+  {
+    "kanji": "忘れる",
+    "reading": "wasureru",
+    "meaning": "forgot"
+  },
+  {
+    "kanji": "考える",
+    "reading": "kangaeru",
+    "meaning": "think(like thinking in your head)"
+  },
+  {
+    "kanji": "決める",
+    "reading": "kimeru",
+    "meaning": "to decide"
+  },
+  {
+    "kanji": "決まる",
+    "reading": "kimaru",
+    "meaning": "decided"
+  },
+  {
+    "kanji": "知る",
+    "reading": "shiru",
+    "meaning": "know"
+  },
+  {
+    "kanji": "一番",
+    "reading": "ichiban",
+    "meaning": "best/number one"
+  },
+  {
+    "kanji": "住む",
+    "reading": "sumu",
+    "meaning": "live/reside"
+  },
+  {
+    "kanji": "名前",
+    "reading": "namae",
+    "meaning": "name"
+  },
+  {
+    "kanji": "食べ物",
+    "reading": "tabemono",
+    "meaning": "food"
+  },
+  {
+    "kanji": "飲み物",
+    "reading": "nomimono",
+    "meaning": "drink(like water/soda item)"
+  },
+  {
+    "kanji": "重い",
+    "reading": "omoi",
+    "meaning": "heavy"
+  },
+  {
+    "kanji": "軽い",
+    "reading": "karui",
+    "meaning": "light"
+  },
+  {
+    "kanji": "送る",
+    "reading": "okuru",
+    "meaning": "send"
+  },
+  {
+    "kanji": "取る",
+    "reading": "toru",
+    "meaning": "take/get"
+  },
+  {
+    "kanji": "待つ",
+    "reading": "matsu",
+    "meaning": "wait"
+  },
+  {
+    "kanji": "持つ",
+    "reading": "motsu",
+    "meaning": "possess/have"
+  },
+  {
+    "kanji": "気持ち",
+    "reading": "kimochi",
+    "meaning": "feeling"
+  },
+  {
+    "kanji": "生きる",
+    "reading": "ikiru",
+    "meaning": "live(like live life or to be alive)"
+  },
+  {
+    "kanji": "先生",
+    "reading": "sensei",
+    "meaning": "teacher"
+  },
+  {
+    "kanji": "大学",
+    "reading": "daigaku",
+    "meaning": "university"
+  },
+  {
+    "kanji": "学生",
+    "reading": "gakusei",
+    "meaning": "student"
+  },
+  {
+    "kanji": "大学生",
+    "reading": "daigakusei",
+    "meaning": "university student"
+  },
+  {
+    "kanji": "学校",
+    "reading": "gakkou",
+    "meaning": "school"
+  },
+  {
+    "kanji": "高校生",
+    "reading": "koukousei",
+    "meaning": "highschool student"
+  },
+  {
+    "kanji": "教える",
+    "reading": "oshieru",
+    "meaning": "tell/teach"
+  },
+  {
+    "kanji": "勉強",
+    "reading": "benkyou",
+    "meaning": "study"
+  },
+  {
+    "kanji": "強い",
+    "reading": "tsuyoi",
+    "meaning": "strong"
+  },
+  {
+    "kanji": "弱い",
+    "reading": "yowai",
+    "meaning": "weak"
+  },
+  {
+    "kanji": "引く",
+    "reading": "hiku",
+    "meaning": "draw/pull"
+  },
+  {
+    "kanji": "質問",
+    "reading": "shitsumon",
+    "meaning": "question"
+  },
+  {
+    "kanji": "難しい",
+    "reading": "muzukashii",
+    "meaning": "difficult"
+  },
+  {
+    "kanji": "数",
+    "reading": "kazu",
+    "meaning": "number"
+  },
+  {
+    "kanji": "勝つ",
+    "reading": "katsu",
+    "meaning": "win"
+  },
+  {
+    "kanji": "負ける",
+    "reading": "makeru",
+    "meaning": "lose"
+  },
+  {
+    "kanji": "本当に",
+    "reading": "hontouni",
+    "meaning": "really"
+  },
+  {
+    "kanji": "要る",
+    "reading": "iru",
+    "meaning": "need/require"
+  },
+  {
+    "kanji": "時計",
+    "reading": "tokei",
+    "meaning": "clock/watch"
+  },
+  {
+    "kanji": "払う",
+    "reading": "harau",
+    "meaning": "pay"
+  },
+  {
+    "kanji": "切る",
+    "reading": "kiru",
+    "meaning": "cut"
+  },
+  {
+    "kanji": "変える",
+    "reading": "kaeru",
+    "meaning": "change"
+  },
+  {
+    "kanji": "乗る",
+    "reading": "noru",
+    "meaning": "ride"
+  },
+  {
+    "kanji": "着る",
+    "reading": "kiru",
+    "meaning": "wear"
+  },
+  {
+    "kanji": "立つ",
+    "reading": "tatsu",
+    "meaning": "stand"
+  },
+  {
+    "kanji": "座る",
+    "reading": "suwaru",
+    "meaning": "sit"
+  },
+  {
+    "kanji": "次",
+    "reading": "tsugi",
+    "meaning": "next"
+  },
+  {
+    "kanji": "今年",
+    "reading": "kotoshi",
+    "meaning": "this year"
+  },
+  {
+    "kanji": "長い",
+    "reading": "nagai",
+    "meaning": "long"
+  },
+  {
+    "kanji": "動く",
+    "reading": "ugoku",
+    "meaning": "move"
+  },
+  {
+    "kanji": "働く",
+    "reading": "hataraku",
+    "meaning": "work"
+  },
+  {
+    "kanji": "早い",
+    "reading": "hayai",
+    "meaning": "early"
+  },
+  {
+    "kanji": "速い",
+    "reading": "hayai",
+    "meaning": "fast"
+  },
+  {
+    "kanji": "遅い",
+    "reading": "osoi",
+    "meaning": "slow"
+  },
+  {
+    "kanji": "始める",
+    "reading": "hajimeru",
+    "meaning": "begin (transitive)"
+  },
+  {
+    "kanji": "始まる",
+    "reading": "hajimaru",
+    "meaning": "begin (intransitive)"
+  },
+  {
+    "kanji": "終わる",
+    "reading": "owaru",
+    "meaning": "end/finish"
+  },
+  {
+    "kanji": "終わり",
+    "reading": "owari",
+    "meaning": "end/conclusion"
+  },
+  {
+    "kanji": "去年",
+    "reading": "kyonen",
+    "meaning": "last year"
+  },
+  {
+    "kanji": "紙",
+    "reading": "kami",
+    "meaning": "paper"
+  },
+  {
+    "kanji": "楽しむ",
+    "reading": "tanoshimu",
+    "meaning": "enjoy(verb)"
+  },
+  {
+    "kanji": "楽しい",
+    "reading": "tanoshii",
+    "meaning": "fun (adjective)"
+  },
+  {
+    "kanji": "歌う",
+    "reading": "utau",
+    "meaning": "sing"
+  },
+  {
+    "kanji": "欲しい",
+    "reading": "hoshii",
+    "meaning": "want"
+  },
+  {
+    "kanji": "色",
+    "reading": "iro",
+    "meaning": "color"
+  },
+  {
+    "kanji": "茶色",
+    "reading": "chairo",
+    "meaning": "brown"
+  },
+  {
+    "kanji": "直ぐ",
+    "reading": "sugu",
+    "meaning": "soon"
+  },
+  {
+    "kanji": "書き直す",
+    "reading": "kakinaosu",
+    "meaning": "rewrite"
+  },
+  {
+    "kanji": "直る",
+    "reading": "naoru",
+    "meaning": "repair"
+  },
+  {
+    "kanji": "線",
+    "reading": "sen",
+    "meaning": "line"
+  },
+  {
+    "kanji": "曲がる",
+    "reading": "magaru",
+    "meaning": "turn"
+  },
+  {
+    "kanji": "同じ",
+    "reading": "onaji",
+    "meaning": "same"
+  },
+  {
+    "kanji": "違う",
+    "reading": "chigau",
+    "meaning": "to be wrong"
+  },
+  {
+    "kanji": "図書館",
+    "reading": "toshokan",
+    "meaning": "library"
+  },
+  {
+    "kanji": "泊まる",
+    "reading": "tomaru",
+    "meaning": "stay overnight"
+  },
+  {
+    "kanji": "遊ぶ",
+    "reading": "asobu",
+    "meaning": "play"
+  },
+  {
+    "kanji": "服",
+    "reading": "fuku",
+    "meaning": "clothes"
+  },
+  {
+    "kanji": "父",
+    "reading": "chichi",
+    "meaning": "one's own father"
+  },
+  {
+    "kanji": "母",
+    "reading": "haha",
+    "meaning": "one's own mother"
+  },
+  {
+    "kanji": "親",
+    "reading": "oya",
+    "meaning": "parent"
+  },
+  {
+    "kanji": "息子",
+    "reading": "musuko",
+    "meaning": "son"
+  },
+  {
+    "kanji": "若い",
+    "reading": "wakai",
+    "meaning": "young"
+  },
+  {
+    "kanji": "彼女",
+    "reading": "kanojo",
+    "meaning": "she, one's girlfriend"
+  },
+  {
+    "kanji": "彼",
+    "reading": "kare",
+    "meaning": "he, one's boyfriend"
+  },
+  {
+    "kanji": "弟",
+    "reading": "otouto",
+    "meaning": "younger brother"
+  },
+  {
+    "kanji": "結婚",
+    "reading": "kekkon",
+    "meaning": "marry"
+  },
+  {
+    "kanji": "自転車",
+    "reading": "jitensha",
+    "meaning": "bicycle"
+  },
+  {
+    "kanji": "娘",
+    "reading": "musume",
+    "meaning": "daughter"
+  },
+  {
+    "kanji": "今日",
+    "reading": "kyou",
+    "meaning": "today"
+  },
+  {
+    "kanji": "昨日",
+    "reading": "kinou",
+    "meaning": "yesterday"
+  },
+  {
+    "kanji": "ご主人",
+    "reading": "goshujin",
+    "meaning": "your husband"
+  },
+  {
+    "kanji": "自分",
+    "reading": "jibun",
+    "meaning": "oneself"
+  },
+  {
+    "kanji": "答える",
+    "reading": "kotaeru",
+    "meaning": "answer/reply"
+  },
+  {
+    "kanji": "別",
+    "reading": "betsu",
+    "meaning": "another/different"
+  },
+  {
+    "kanji": "病気",
+    "reading": "byouki",
+    "meaning": "illness"
+  },
+  {
+    "kanji": "死ぬ",
+    "reading": "shinu",
+    "meaning": "die"
+  },
+  {
+    "kanji": "痛い",
+    "reading": "itai",
+    "meaning": "painful"
+  },
+  {
+    "kanji": "酒",
+    "reading": "sake",
+    "meaning": "alcohol"
+  },
+  {
+    "kanji": "一杯",
+    "reading": "ippai",
+    "meaning": "full"
+  },
+  {
+    "kanji": "飛ぶ",
+    "reading": "tobu",
+    "meaning": "fly"
+  },
+  {
+    "kanji": "飛行機",
+    "reading": "hikouki",
+    "meaning": "airplane"
+  },
+  {
+    "kanji": "お願い",
+    "reading": "onegai",
+    "meaning": "favor"
+  },
+  {
+    "kanji": "続く",
+    "reading": "tsuzuku",
+    "meaning": "continue"
+  },
+  {
+    "kanji": "日記",
+    "reading": "nikki",
+    "meaning": "diary"
+  },
+  {
+    "kanji": "上",
+    "reading": "ue",
+    "meaning": "up"
+  },
+  {
+    "kanji": "後ろ",
+    "reading": "ushiro",
+    "meaning": "back"
+  },
+  {
+    "kanji": "首",
+    "reading": "kubi",
+    "meaning": "neck"
+  },
+  {
+    "kanji": "頭",
+    "reading": "atama",
+    "meaning": "head"
+  },
+  {
+    "kanji": "顔",
+    "reading": "kao",
+    "meaning": "face"
+  },
+  {
+    "kanji": "二",
+    "reading": "ni",
+    "meaning": "two"
+  },
+  {
+    "kanji": "感じる",
+    "reading": "kanjiru",
+    "meaning": "feeling"
+  },
+  {
+    "kanji": "探す",
+    "reading": "sagasu",
+    "meaning": "to search"
+  },
+  {
+    "kanji": "落ちる",
+    "reading": "ochiru",
+    "meaning": "to fall"
+  },
+  {
+    "kanji": "お手洗い",
+    "reading": "otearai",
+    "meaning": "toilet"
+  },
+  {
+    "kanji": "冷たい",
+    "reading": "tsumetai",
+    "meaning": "cold (things you feel)"
+  },
+  {
+    "kanji": "汚い",
+    "reading": "kitanai",
+    "meaning": "dirty"
+  },
+  {
+    "kanji": "太い",
+    "reading": "futoi",
+    "meaning": "fat/thick"
+  },
+  {
+    "kanji": "曇る",
+    "reading": "kumoru",
+    "meaning": "become cloudy"
+  },
+  {
+    "kanji": "神",
+    "reading": "kami",
+    "meaning": "God"
+  },
+  {
+    "kanji": "建てる",
+    "reading": "tateru",
+    "meaning": "build/erect"
+  },
+  {
+    "kanji": "左",
+    "reading": "hidari",
+    "meaning": "left"
+  },
+  {
+    "kanji": "置く",
+    "reading": "oku",
+    "meaning": "put/leave (things)"
+  },
+  {
+    "kanji": "辺",
+    "reading": "hen",
+    "meaning": "vicinity/area"
+  },
+  {
+    "kanji": "黄色い",
+    "reading": "kiiroi",
+    "meaning": "yellow"
+  },
+  {
+    "kanji": "一緒に",
+    "reading": "ishoni",
+    "meaning": "together"
+  },
+  {
+    "kanji": "緑",
+    "reading": "midori",
+    "meaning": "green"
+  },
+  {
+    "kanji": "易しい",
+    "reading": "yasashii",
+    "meaning": "easy"
+  },
+  {
+    "kanji": "留学生",
+    "reading": "ryuugakusei",
+    "meaning": "international student"
+  },
+  {
+    "kanji": "戻る",
+    "reading": "modoru",
+    "meaning": "return/go back"
+  },
+  {
+    "kanji": "そば",
+    "reading": "soba",
+    "meaning": "side/nearby (person)"
+  },
+  {
+    "kanji": "起きる",
+    "reading": "okiru",
+    "meaning": "occur (event)/get up (from bed)"
+  },
+  {
+    "kanji": "起こる",
+    "reading": "okoru",
+    "meaning": "happen"
+  },
+  {
+    "kanji": "起こす",
+    "reading": "okoru",
+    "meaning": "wake up (someone)"
+  },
+  {
+    "kanji": "寝る",
+    "reading": "neru",
+    "meaning": "to sleep"
+  },
+  {
+    "kanji": "まずい",
+    "reading": "mazui",
+    "meaning": "bad tasting, bad"
+  },
+  {
+    "kanji": "載せる",
+    "reading": "noseru",
+    "meaning": "to place on something"
+  },
+  {
+    "kanji": "上手",
+    "reading": "jouzu",
+    "meaning": "skilled"
+  },
+  {
+    "kanji": "締める",
+    "reading": "shimeru",
+    "meaning": "close something in a moving manner (fasten/tighten)"
+  },
+  {
+    "kanji": "甘い",
+    "reading": "amai",
+    "meaning": "sweet"
+  },
+  {
+    "kanji": "辛い",
+    "reading": "karai",
+    "meaning": "spicy"
+  },
+  {
+    "kanji": "優しい",
+    "reading": "yashashii",
+    "meaning": "gentle"
+  },
+  {
+    "kanji": "夫",
+    "reading": "otto",
+    "meaning": "husband"
+  },
+  {
+    "kanji": "妻",
+    "reading": "tsuma",
+    "meaning": "wife"
+  },
+  {
+    "kanji": "誰",
+    "reading": "dare",
+    "meaning": "who"
+  },
+  {
+    "kanji": "愛する",
+    "reading": "aisuru",
+    "meaning": "love"
+  },
+  {
+    "kanji": "笑う",
+    "reading": "warau",
+    "meaning": "laugh"
+  },
+  {
+    "kanji": "酸っぱい",
+    "reading": "suppai",
+    "meaning": "sour"
+  },
+  {
+    "kanji": "言葉",
+    "reading": "kotoba",
+    "meaning": "word"
+  },
+  {
+    "kanji": "呼ぶ",
+    "reading": "yobu",
+    "meaning": "call"
+  },
+  {
+    "kanji": "足",
+    "reading": "ashi",
+    "meaning": "feet"
+  },
+  {
+    "kanji": "曜日",
+    "reading": "youbi",
+    "meaning": "day of the week"
+  },
+  {
+    "kanji": "胸",
+    "reading": "mune",
+    "meaning": "chest"
+  },
+  {
+    "kanji": "腰",
+    "reading": "koshi",
+    "meaning": "lower back"
+  },
+  {
+    "kanji": "背",
+    "reading": "se",
+    "meaning": "tall (as in height)"
+  },
+  {
+    "kanji": "片仮名",
+    "reading": "katakana",
+    "meaning": "Katakana"
+  },
+  {
+    "kanji": "平仮名",
+    "reading": "hiragana",
+    "meaning": "Hiragana"
+  },
+  {
+    "kanji": "悲しい",
+    "reading": "kanashii",
+    "meaning": "sad"
+  },
+  {
+    "kanji": "美しい",
+    "reading": "utsukushii",
+    "meaning": "beautiful"
+  },
+  {
+    "kanji": "授業",
+    "reading": "jugyou",
+    "meaning": "class/lesson"
+  },
+  {
+    "kanji": "手伝う",
+    "reading": "tetsudau",
+    "meaning": "help/assist"
+  },
+  {
+    "kanji": "狭い",
+    "reading": "semai",
+    "meaning": "narrow"
+  },
+  {
+    "kanji": "触る",
+    "reading": "sawaru",
+    "meaning": "touch"
+  },
+  {
+    "kanji": "出来る",
+    "reading": "dekiru",
+    "meaning": "can do"
+  },
+  {
+    "kanji": "嫌い",
+    "reading": "kirai",
+    "meaning": "dislike"
+  },
+  {
+    "kanji": "浴びる",
+    "reading": "abiru",
+    "meaning": "take a shower"
+  },
+  {
+    "kanji": "渇く",
+    "reading": "kawaku",
+    "meaning": "thirsty"
+  },
+  {
+    "kanji": "細い",
+    "reading": "hosoi",
+    "meaning": "thin/slender"
+  },
+  {
+    "kanji": "安い",
+    "reading": "yasui",
+    "meaning": "cheap"
+  },
+  {
+    "kanji": "大好き",
+    "reading": "daisuki",
+    "meaning": "love"
+  },
+  {
+    "kanji": "低い",
+    "reading": "hikui",
+    "meaning": "short (in height)"
+  },
+  {
+    "kanji": "閉まる",
+    "reading": "shimaru",
+    "meaning": "shut in (thing)"
+  },
+  {
+    "kanji": "私",
+    "reading": "watashi",
+    "meaning": "I/me"
+  },
+  {
+    "kanji": "友達",
+    "reading": "tomodachi",
+    "meaning": "friend"
+  },
+  {
+    "kanji": "方",
+    "reading": "hou",
+    "meaning": "direction"
+  },
+  {
+    "kanji": "高い",
+    "reading": "takai",
+    "meaning": "tall"
+  },
+  {
+    "kanji": "昼",
+    "reading": "hiru",
+    "meaning": "midday"
+  },
+  {
+    "kanji": "元気",
+    "reading": "genki",
+    "meaning": "health/energetic"
+  },
+  {
+    "kanji": "開ける",
+    "reading": "akeru",
+    "meaning": "open"
+  },
+  {
+    "kanji": "三日",
+    "reading": "mikka",
+    "meaning": "3rd day of the month"
+  },
+  {
+    "kanji": "閉める",
+    "reading": "shimeru",
+    "meaning": "shut in (if it's a person)"
+  },
+  {
+    "kanji": "子供",
+    "reading": "kodomo",
+    "meaning": "child"
+  },
+  {
+    "kanji": "五",
+    "reading": "go",
+    "meaning": "five"
+  },
+  {
+    "kanji": "前",
+    "reading": "mae",
+    "meaning": "front"
+  },
+  {
+    "kanji": "入れる",
+    "reading": "ireru",
+    "meaning": "to put in"
+  },
+  {
+    "kanji": "聞く",
+    "reading": "kiku",
+    "meaning": "hear"
+  },
+  {
+    "kanji": "開く",
+    "reading": "hiraku",
+    "meaning": "open (like opening a book)"
+  },
+  {
+    "kanji": "時間",
+    "reading": "jikan",
+    "meaning": "time (hour)"
+  },
+  {
+    "kanji": "分かる",
+    "reading": "wakaru",
+    "meaning": "understand"
+  },
+  {
+    "kanji": "千",
+    "reading": "sen",
+    "meaning": "thousand"
+  },
+  {
+    "kanji": "空く",
+    "reading": "suku",
+    "meaning": "empty"
+  },
+  {
+    "kanji": "後",
+    "reading": "ato",
+    "meaning": "later"
+  },
+  {
+    "kanji": "水曜日",
+    "reading": "suiyoubi",
+    "meaning": "Wednesday"
+  },
+  {
+    "kanji": "目",
+    "reading": "me",
+    "meaning": "eyes"
+  },
+  {
+    "kanji": "午後",
+    "reading": "gogo",
+    "meaning": "afternoon"
+  },
+  {
+    "kanji": "月曜日",
+    "reading": "getsuyoubi",
+    "meaning": "Monday"
+  },
+  {
+    "kanji": "出る",
+    "reading": "deru",
+    "meaning": "leave"
+  },
+  {
+    "kanji": "天気",
+    "reading": "tenki",
+    "meaning": "weather"
+  },
+  {
+    "kanji": "午前",
+    "reading": "gozen",
+    "meaning": "morning/A.M."
+  },
+  {
+    "kanji": "七つ",
+    "reading": "nanatsu",
+    "meaning": "seven things"
+  },
+  {
+    "kanji": "時",
+    "reading": "toki",
+    "meaning": "time (specific point in time like 'when' but not 'itsu')"
+  },
+  {
+    "kanji": "本",
+    "reading": "hon",
+    "meaning": "book"
+  },
+  {
+    "kanji": "朝",
+    "reading": "asa",
+    "meaning": "morning"
+  },
+  {
+    "kanji": "日曜日",
+    "reading": "nichiyoubi",
+    "meaning": "Sunday"
+  },
+  {
+    "kanji": "九",
+    "reading": "kyuu",
+    "meaning": "nine"
+  },
+  {
+    "kanji": "五日",
+    "reading": "itsuka",
+    "meaning": "5th day of the month"
+  },
+  {
+    "kanji": "土曜日",
+    "reading": "doyoubi",
+    "meaning": "Saturday"
+  },
+  {
+    "kanji": "女",
+    "reading": "onna",
+    "meaning": "woman"
+  },
+  {
+    "kanji": "二つ",
+    "reading": "futatsu",
+    "meaning": "two things"
+  },
+  {
+    "kanji": "晴れる",
+    "reading": "hareru",
+    "meaning": "to be sunny"
+  },
+  {
+    "kanji": "日",
+    "reading": "nichi",
+    "meaning": "day"
+  },
+  {
+    "kanji": "晩",
+    "reading": "ban",
+    "meaning": "evening"
+  },
+  {
+    "kanji": "円",
+    "reading": "en",
+    "meaning": "circle/yen depending on the context"
+  },
+  {
+    "kanji": "火曜日",
+    "reading": "kayoubi",
+    "meaning": "Tuesday"
+  },
+  {
+    "kanji": "夜",
+    "reading": "yoru",
+    "meaning": "night"
+  },
+  {
+    "kanji": "食べる",
+    "reading": "taberu",
+    "meaning": "to eat"
+  },
+  {
+    "kanji": "木曜日",
+    "reading": "mokuyoubi",
+    "meaning": "Thursday"
+  },
+  {
+    "kanji": "五つ",
+    "reading": "itsutsu",
+    "meaning": "five things"
+  },
+  {
+    "kanji": "飲む",
+    "reading": "nomu",
+    "meaning": "drink"
+  },
+  {
+    "kanji": "ご飯",
+    "reading": "gohan",
+    "meaning": "meal"
+  },
+  {
+    "kanji": "六",
+    "reading": "roku",
+    "meaning": "six"
+  },
+  {
+    "kanji": "四日",
+    "reading": "yokka",
+    "meaning": "4th day of the month"
+  },
+  {
+    "kanji": "買う",
+    "reading": "kau",
+    "meaning": "buy"
+  },
+  {
+    "kanji": "見る",
+    "reading": "miru",
+    "meaning": "see"
+  },
+  {
+    "kanji": "家",
+    "reading": "uchi",
+    "meaning": "house/home"
+  },
+  {
+    "kanji": "見せる",
+    "reading": "miseru",
+    "meaning": "show"
+  },
+  {
+    "kanji": "金",
+    "reading": "kane",
+    "meaning": "money"
+  },
+  {
+    "kanji": "言う",
+    "reading": "iu",
+    "meaning": "tell"
+  },
+  {
+    "kanji": "話す",
+    "reading": "hanasu",
+    "meaning": "speak"
+  },
+  {
+    "kanji": "九つ",
+    "reading": "kokonotsu",
+    "meaning": "nine things"
+  },
+  {
+    "kanji": "万",
+    "reading": "man",
+    "meaning": "ten thousand"
+  },
+  {
+    "kanji": "時々",
+    "reading": "tokidoki",
+    "meaning": "sometimes"
+  },
+  {
+    "kanji": "十",
+    "reading": "juu",
+    "meaning": "ten"
+  },
+  {"kanji": "髪の毛", "reading": "kaminoke", "meaning": "hair"},
+  {"kanji": "肩", "reading": "kata", "meaning": "shoulder"},
+  {"kanji": "鼻", "reading": "hana", "meaning": "nose"},
+  {"kanji": "腕", "reading": "ude", "meaning": "arm"},
+  {"kanji": "掛ける", "reading": "kakeru", "meaning": "to hang, to put on"},
+  {"kanji": "僕", "reading": "boku", "meaning": "I (used by males)"},
+  {"kanji": "駄目", "reading": "dame", "meaning": "no good, useless"},
+  {"kanji": "大丈夫", "reading": "daijoubu", "meaning": "okay, safe"},
+  {"kanji": "風邪", "reading": "kaze", "meaning": "cold (illness)"},
+  {"kanji": "奇麗", "reading": "kirei", "meaning": "pretty, clean"},
+  {"kanji": "嬉しい", "reading": "ureshii", "meaning": "happy"},
+  {"kanji": "閉じる", "reading": "tojiru", "meaning": "to close"},
+  {"kanji": "億", "reading": "oku", "meaning": "hundred million"},
+  {"kanji": "寺", "reading": "tera", "meaning": "temple"},
+  {"kanji": "火", "reading": "hi", "meaning": "fire"},
+  {"kanji": "木", "reading": "ki", "meaning": "tree, wood"},
+  {"kanji": "金", "reading": "kin", "meaning": "gold, money"},
+  {"kanji": "十分", "reading": "juubun", "meaning": "enough, sufficient"},
+  {"kanji": "分", "reading": "bun", "meaning": "amount, part, share"},
+  {"kanji": "分ける", "reading": "wakeru", "meaning": "to divide into parts"},
+  {"kanji": "分かれる", "reading": "wakareru", "meaning": "to be divided"},
+  {"kanji": "何か", "reading": "nanika", "meaning": "something"},
+  {"kanji": "何", "reading": "nan", "meaning": "what, which"},
+  {"kanji": "先ず", "reading": "mazu", "meaning": "first"},
+  {"kanji": "先月", "reading": "sengetsu", "meaning": "last month"},
+  {"kanji": "先週", "reading": "senshuu", "meaning": "last week"},
+  {"kanji": "今まで", "reading": "imamade", "meaning": "until now"},
+  {"kanji": "来月", "reading": "raigetsu", "meaning": "next month"},
+  {"kanji": "来週", "reading": "raishuu", "meaning": "next week"}
+]

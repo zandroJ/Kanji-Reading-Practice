@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kanji Reading Practice</h1>
+        <div class="score-container">Score: <span id="score">0</span></div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p class="feedback" id="feedback"></p>
+        <div class="card" id="card">
+            <!-- Kanji will be displayed here -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="answerInput" placeholder="Type pronunciation" autocomplete="off">
+            <button id="submitButton">Submit</button>
+            <button id="nextButton" hidden>Next Card</button>
+        </div>
+    </div>
+
+    <audio id="correctSound" src="audio/correct.mp3"></audio>
+    <audio id="wrongSound" src="audio/wrong.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
