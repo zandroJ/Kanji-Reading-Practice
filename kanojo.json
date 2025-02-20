@@ -876,7 +876,7 @@
   },
   {
     "kanji": "起こす",
-    "reading": "okoru",
+    "reading": "okosu",
     "meaning": "wake up (someone)"
   },
   {
@@ -916,7 +916,7 @@
   },
   {
     "kanji": "優しい",
-    "reading": "yashashii",
+    "reading": "yasashii",
     "meaning": "gentle"
   },
   {
@@ -1160,11 +1160,6 @@
     "meaning": "thousand"
   },
   {
-    "kanji": "空く",
-    "reading": "suku",
-    "meaning": "empty"
-  },
-  {
     "kanji": "後",
     "reading": "ato",
     "meaning": "later"
@@ -1340,6 +1335,11 @@
     "meaning": "show"
   },
   {
+    "kanji": "金 (gold/friday)",
+    "reading": "kin",
+    "meaning": "gold, friday"
+  },
+  {
     "kanji": "金",
     "reading": "kane",
     "meaning": "money"
@@ -1374,33 +1374,280 @@
     "reading": "juu",
     "meaning": "ten"
   },
-  {"kanji": "髪の毛", "reading": "kaminoke", "meaning": "hair"},
-  {"kanji": "肩", "reading": "kata", "meaning": "shoulder"},
-  {"kanji": "鼻", "reading": "hana", "meaning": "nose"},
-  {"kanji": "腕", "reading": "ude", "meaning": "arm"},
-  {"kanji": "掛ける", "reading": "kakeru", "meaning": "to hang, to put on"},
-  {"kanji": "僕", "reading": "boku", "meaning": "I (used by males)"},
-  {"kanji": "駄目", "reading": "dame", "meaning": "no good, useless"},
-  {"kanji": "大丈夫", "reading": "daijoubu", "meaning": "okay, safe"},
-  {"kanji": "風邪", "reading": "kaze", "meaning": "cold (illness)"},
-  {"kanji": "奇麗", "reading": "kirei", "meaning": "pretty, clean"},
-  {"kanji": "嬉しい", "reading": "ureshii", "meaning": "happy"},
-  {"kanji": "閉じる", "reading": "tojiru", "meaning": "to close"},
-  {"kanji": "億", "reading": "oku", "meaning": "hundred million"},
-  {"kanji": "寺", "reading": "tera", "meaning": "temple"},
-  {"kanji": "火", "reading": "hi", "meaning": "fire"},
-  {"kanji": "木", "reading": "ki", "meaning": "tree, wood"},
-  {"kanji": "金", "reading": "kin", "meaning": "gold, money"},
-  {"kanji": "十分", "reading": "juubun", "meaning": "enough, sufficient"},
-  {"kanji": "分", "reading": "bun", "meaning": "amount, part, share"},
-  {"kanji": "分ける", "reading": "wakeru", "meaning": "to divide into parts"},
-  {"kanji": "分かれる", "reading": "wakareru", "meaning": "to be divided"},
-  {"kanji": "何か", "reading": "nanika", "meaning": "something"},
-  {"kanji": "何", "reading": "nan", "meaning": "what, which"},
-  {"kanji": "先ず", "reading": "mazu", "meaning": "first"},
-  {"kanji": "先月", "reading": "sengetsu", "meaning": "last month"},
-  {"kanji": "先週", "reading": "senshuu", "meaning": "last week"},
-  {"kanji": "今まで", "reading": "imamade", "meaning": "until now"},
-  {"kanji": "来月", "reading": "raigetsu", "meaning": "next month"},
-  {"kanji": "来週", "reading": "raishuu", "meaning": "next week"}
+  {
+    "kanji": "髪の毛",
+    "reading": "kaminoke",
+    "meaning": "hair"
+  },
+  {
+    "kanji": "肩",
+    "reading": "kata",
+    "meaning": "shoulder"
+  },
+  {
+    "kanji": "鼻",
+    "reading": "hana",
+    "meaning": "nose"
+  },
+  {
+    "kanji": "腕",
+    "reading": "ude",
+    "meaning": "arm"
+  },
+  {
+    "kanji": "掛ける",
+    "reading": "kakeru",
+    "meaning": "to hang, to put on"
+  },
+  {
+    "kanji": "僕",
+    "reading": "boku",
+    "meaning": "I (used by males)"
+  },
+  {
+    "kanji": "駄目",
+    "reading": "dame",
+    "meaning": "no good, useless"
+  },
+  {
+    "kanji": "大丈夫",
+    "reading": "daijoubu",
+    "meaning": "okay, safe"
+  },
+  {
+    "kanji": "風邪",
+    "reading": "kaze",
+    "meaning": "cold (illness)"
+  },
+  {
+    "kanji": "奇麗",
+    "reading": "kirei",
+    "meaning": "pretty, clean"
+  },
+  {
+    "kanji": "嬉しい",
+    "reading": "ureshii",
+    "meaning": "happy"
+  },
+  {
+    "kanji": "閉じる",
+    "reading": "tojiru",
+    "meaning": "to close"
+  },
+  {
+    "kanji": "億",
+    "reading": "oku",
+    "meaning": "hundred million"
+  },
+  {
+    "kanji": "寺",
+    "reading": "tera",
+    "meaning": "temple"
+  },
+  {
+    "kanji": "火",
+    "reading": "hi",
+    "meaning": "fire"
+  },
+  {
+    "kanji": "木",
+    "reading": "ki",
+    "meaning": "tree, wood"
+  },
+  {
+    "kanji": "十分",
+    "reading": "juubun",
+    "meaning": "enough, sufficient"
+  },
+  {
+    "kanji": "分",
+    "reading": "bun",
+    "meaning": "amount, part, share"
+  },
+  {
+    "kanji": "分ける",
+    "reading": "wakeru",
+    "meaning": "to divide into parts"
+  },
+  {
+    "kanji": "分かれる",
+    "reading": "wakareru",
+    "meaning": "to be divided"
+  },
+  {
+    "kanji": "何か",
+    "reading": "nanika",
+    "meaning": "something"
+  },
+  {
+    "kanji": "何",
+    "reading": "nan",
+    "meaning": "what, which"
+  },
+  {
+    "kanji": "先ず",
+    "reading": "mazu",
+    "meaning": "first"
+  },
+  {
+    "kanji": "先月",
+    "reading": "sengetsu",
+    "meaning": "last month"
+  },
+  {
+    "kanji": "先週",
+    "reading": "senshuu",
+    "meaning": "last week"
+  },
+  {
+    "kanji": "今まで",
+    "reading": "imamade",
+    "meaning": "until now"
+  },
+  {
+    "kanji": "来月",
+    "reading": "raigetsu",
+    "meaning": "next month"
+  },
+  {
+    "kanji": "来週",
+    "reading": "raishuu",
+    "meaning": "next week"
+  },
+  {
+    "kanji": "行う",
+    "reading": "okonau",
+    "meaning": "carry out"
+  },
+  {
+    "kanji": "行き (common usage)",
+    "reading": "iki",
+    "meaning": "going (common usage)"
+  },
+  {
+    "kanji": "帰り",
+    "reading": "kairi",
+    "meaning": "go home"
+  },
+  {
+    "kanji": "大きさ",
+    "reading": "ookisa",
+    "meaning": "size"
+  },
+  {
+    "kanji": "大分",
+    "reading": "daibu",
+    "meaning": "very / greatly"
+  },
+  {
+    "kanji": "中",
+    "reading": "naka",
+    "meaning": "inside"
+  },
+  {
+    "kanji": "少年",
+    "reading": "shounen",
+    "meaning": "young boy"
+  },
+  {
+    "kanji": "少しも",
+    "reading": "sukoshimo",
+    "meaning": "at all"
+  },
+  {
+    "kanji": "少々",
+    "reading": "shoushou",
+    "meaning": "a little"
+  },
+  {
+    "kanji": "多く",
+    "reading": "ooku",
+    "meaning": "a lot / many"
+  },
+  {
+    "kanji": "上がる",
+    "reading": "agaru",
+    "meaning": "go up, rise / get nervous"
+  },
+  {
+    "kanji": "年上",
+    "reading": "toshiue",
+    "meaning": "senior"
+  },
+  {
+    "kanji": "上り電車",
+    "reading": "nobori densha",
+    "meaning": "train that goes toward the city"
+  },
+  {
+    "kanji": "下げる",
+    "reading": "sageru",
+    "meaning": "turn down (volume)"
+  },
+  {
+    "kanji": "下がる",
+    "reading": "sagaru",
+    "meaning": "come down"
+  },
+  {
+    "kanji": "下りる",
+    "reading": "oriru",
+    "meaning": "go down (stairs)"
+  },
+  {
+    "kanji": "下ろす",
+    "reading": "orosu",
+    "meaning": "bring down (boxes)"
+  },
+
+  {
+    "kanji": "年下",
+    "reading": "toshishita",
+    "meaning": "junior"
+  },
+  {
+    "kanji": "一方",
+    "reading": "ippo",
+    "meaning": "one way"
+  },
+  {
+    "kanji": "行き (used for places)",
+    "reading": "yuki",
+    "meaning": "bound for (used for places)"
+  },
+  {
+    "kanji": "空く(referring to people)",
+    "reading": "suku",
+    "meaning": "not crowded"
+  },
+  {
+    "kanji": "空く (literal nothing)",
+    "reading": "aku",
+    "meaning": "empty (literal nothing)"
+  },
+  {
+    "kanji": "下り (out of the city)",
+    "reading": "kudari",
+    "meaning": "going down (out of the city)"
+  },
+  {
+    "kanji": "下りる (stairs)",
+    "reading": "oriru",
+    "meaning": "go down (stairs)"
+  },
+  {
+    "kanji": "下ろす (boxes)",
+    "reading": "orosu",
+    "meaning": "bring down (boxes)"
+  },
+  {
+    "kanji": "家 (actual building)",
+    "reading": "ie",
+    "meaning": "house (actual building)"
+  },
+  {
+    "kanji": "家 (personal space)",
+    "reading": "ie",
+    "meaning": "home (personal space)"
+  }
 ]
