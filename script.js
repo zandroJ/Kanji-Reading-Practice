@@ -50,7 +50,10 @@ function initializeGame() {
     const userInput = document.getElementById('answerInput').value.trim().toLowerCase();
     if (!global.currentKanji) return;
 
-    const correct = userInput === global.currentKanji.reading;
+    // Split the readings by comma and check if the user input matches any
+    const correctReadings = global.currentKanji.reading.split(', ').map(r => r.trim().toLowerCase());
+    const correct = correctReadings.includes(userInput);
+
     const feedbackMessage = correct
       ? `✅ Correct!`
       : `❌ Wrong! Correct: ${global.currentKanji.reading}`;
@@ -68,7 +71,8 @@ function initializeGame() {
 
     // Wait for feedback before moving to next card
     setTimeout(() => nextCard(), 2000);
-  }
+}
+
 
   function updateScore(correct) {
     if (correct) {
