@@ -1,7 +1,7 @@
 const kanjiData = [];
 
 // Load the Kanji data from the external JSON file
-fetch('./kanojo.json')
+fetch('./kanji_data.json')
   .then(response => response.json())
   .then(data => {
     kanjiData.push(...data);
