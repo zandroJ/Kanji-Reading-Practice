@@ -50,44 +50,55 @@ const Quiz = ({ kanjiData, originalKanjiData, onScoreUpdate, onProgressUpdate })
   };
 
   // Display Kanji
-  const displayKanji = (kanji) => {
-    setCurrentKanji(kanji);
-    setUserInput('');
-    setFeedback('');
-    setIsFeedbackVisible(false); // Reset feedback visibility when showing a new card
-  };
+const displayKanji = (kanji) => {
+  setCurrentKanji(kanji);
+  setUserInput('');
+  setFeedback('');
+  setIsFeedbackVisible(false);
+  
+  // Automatically focus input on new card
+  setTimeout(() => {
+    document.getElementById('answerInput').focus();
+  }, 100);
+};
 
-  // Check answer
-  const checkAnswer = () => {
-    if (!currentKanji) return;
+ // Check answer
+const checkAnswer = () => {
+  if (!currentKanji) return;
 
-    const userInputLower = userInput.trim().toLowerCase();
-    const correctReadings = currentKanji.reading.split(', ').map((r) => r.trim().toLowerCase());
-    const correct = correctReadings.includes(userInputLower);
+  const userInputLower = userInput.trim().toLowerCase();
+  const correctReadings = currentKanji.reading.split(', ').map((r) => r.trim().toLowerCase());
+  const correct = correctReadings.includes(userInputLower);
 
-    const feedbackMessage = correct
-      ? `✅ Correct!`
-      : `❌ Wrong! Correct: ${currentKanji.reading}`;
+  const feedbackMessage = correct
+    ? `✅ Correct!`
+    : `❌ Wrong! Correct: ${currentKanji.reading}`;
 
-    const meaningMessage = `Meaning: ${currentKanji.meaning}`;
+  const meaningMessage = `Meaning: ${currentKanji.meaning}`;
 
-    setFeedback(`${feedbackMessage}<br>${meaningMessage}`);
-    setIsFeedbackVisible(true); // Set feedback as visible
+  setFeedback(`${feedbackMessage}<br>${meaningMessage}`);
+  setIsFeedbackVisible(true);
 
-    // Play sound
-    if (correct) {
-      correctSound.current.play();
-    } else {
-      wrongSound.current.play();
-    }
+  // Play sound
+  if (correct) {
+    correctSound.current.play();
+  } else {
+    wrongSound.current.play();
+  }
 
-    onScoreUpdate(correct);
-    onProgressUpdate();
+  onScoreUpdate(correct);
+  onProgressUpdate();
 
-    // Move to next card after 2 seconds
-    setTimeout(() => nextCard(kanjiData), 2000);
-  };
-
+  // Move to next card after 2 seconds
+  setTimeout(() => {
+    nextCard(kanjiData);
+    // Re-enable input and focus after state updates
+    setTimeout(() => {
+      document.getElementById('answerInput').disabled = false;
+      document.getElementById('answerInput').focus();
+    }, 100);
+  }, 2000);
+};
   // Next card
   const nextCard = (data) => {
     const nextKanji = getNextCard(data);

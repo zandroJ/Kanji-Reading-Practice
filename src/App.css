@@ -2,90 +2,149 @@
 body {
   background-color: #121212; /* Dark background for the entire page */
   color: #ffffff; /* Light text color for contrast */
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
+/* Container styling */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; /* Align content at the top */
+  padding: 30px; /* Increased padding for better spacing */
+  width: 100%; 
+  max-width: 600px; /* To limit the width for larger screens */
+  
+ 
+  font-size:20px;
 }
 
+/* Feedback text styling */
+.feedback {
+  margin-top: 0; /* Remove any extra margin from top */
+  font-size: 20px; /* Slightly larger font size for emphasis */
+  font-weight: bold; 
+  color: #ffffff; /* Light text color */
+  margin-bottom: 20px; /* Add margin at the bottom to separate from other elements */
+  text-align: center; 
+}
+
+/* Card styling */
 .card {
-  width: 300px;
-  height: 200px;
-  background-color: #1e1e1e; /* Darker background for the card */
-  border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
+  width: 100%; /* Make it full-width within container */
+  height: 200px; 
+  
+  margin: 20px 0; 
+  /* padding: 20px;  */
+  display: flex; 
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  font-size: 70px; /* Increased font size for the Kanji character */
+  font-weight: bold; 
+  text-align: center; 
   color: #ffffff; /* Light text color */
-  border: 1px solid #333; /* Subtle border for the card */
+  
+  transition: transform 0.3s; /* Smooth transform effect */
 }
 
+.card:hover {
+  transform: scale(1.02); /* Slightly enlarge card on hover */
+}
+
+/* Score container styling */
 .score-container {
-  margin: 20px;
-  padding: 10px;
-  background-color: #1e1e1e; /* Darker background for the score container */
-  border-radius: 5px;
-  font-size: 18px;
-  color: #ffffff; /* Light text color */
-  border: 1px solid #333; /* Subtle border */
+  margin: 20px 0; 
+  padding: 10px; 
+ font-size:20px;
 }
 
+/* Progress bar styling */
 .progress-bar {
-  width: 300px;
-  height: 20px;
+  width: 100%; /* Make it full-width within container */
+  max-width: 300px; /* Limit the width to 300px */
+  height: 5px; 
   background-color: #333; /* Darker background for the progress bar */
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
+  margin: 10px 0; 
+  
+  overflow: hidden; 
 }
 
+/* Progress indicator styling */
 .progress {
-  height: 100%;
+  height: 100%; 
   background-color: #4CAF50; /* Keep the progress color bright for visibility */
-  width: 0;
-  transition: width 0.3s ease-in-out;
+  width: 0; 
+  transition: width 0.3s ease-in-out; 
 }
 
+/* Input field styling */
 input {
-  padding: 10px;
-  font-size: 18px;
-  margin: 10px;
-  width: 200px;
-  text-align: center;
+  padding: 10px; 
+  font-size: 18px; 
+  margin: 10px; 
+  width: 200px; 
+  text-align: center; 
   background-color: #1e1e1e; /* Dark background for input */
   color: #ffffff; /* Light text color */
   border: 1px solid #333; /* Subtle border */
-  border-radius: 5px;
+  border-radius: 5px; 
+  transition: border-color 0.3s; /* Smooth transition for border */
 }
 
+input:focus {
+  border-color: #4CAF50; /* Change border color on focus */
+}
+
+/* Button styling */
 button {
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 10px;
+  display:none;
+  padding: 10px 20px; 
+  font-size: 18px; 
+  cursor: pointer; 
+  margin-top: 10px; 
   background-color: #333; /* Dark background for button */
   color: #ffffff; /* Light text color */
   border: 1px solid #555; /* Subtle border */
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
 }
 
+/* Button hover effects */
 button:hover {
   background-color: #555; /* Slightly lighter on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
 }
 
-.feedback {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff; /* Light text color */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .card {
+      height: 150px; /* Adjust height on smaller screens */
+      font-size: 60px; /* Slightly smaller font size for Kanji on smaller screens */
+  }
+
+  .progress-bar {
+      width: 100%; /* Progress bar should take full width */
+  }
+
+  input {
+      width: 100%; /* Input should take full width on small screens */
+  }
+
+  button {
+      width: 100%; /* Button takes full width on smaller screens */
+  }
+
+  .feedback {
+      font-size: 18px; /* Slightly smaller font size for feedback */
+  }
 }

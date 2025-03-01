@@ -36,7 +36,7 @@ const App = () => {
     <div className="container">
       <h1>漢字の読み練習</h1>
       <div className="score-container">
-        Score: <span id="score">{score}</span>
+        <span id="score">{score}</span>
       </div>
       <div className="progress-bar">
         <div className="progress" style={{ width: `${progress}%` }}></div>
