@@ -46,33 +46,45 @@ function initializeGame() {
     document.getElementById('feedback').innerText = ''; // Clear feedback
   }
 
-  function checkAnswer() {
-    const userInput = document.getElementById('answerInput').value.trim().toLowerCase();
-    if (!global.currentKanji) return;
-
-    // Split the readings by comma and check if the user input matches any
-    const correctReadings = global.currentKanji.reading.split(', ').map(r => r.trim().toLowerCase());
-    const correct = correctReadings.includes(userInput);
-
+  const checkAnswer = () => {
+    if (!currentKanji) return;
+  
+    const userInputLower = userInput.trim().toLowerCase();
+    const correctReadings = currentKanji.reading.split(', ').map((r) => r.trim().toLowerCase());
+    const correct = correctReadings.includes(userInputLower);
+  
     const feedbackMessage = correct
       ? `✅ Correct!`
-      : `❌ Wrong! Correct: ${global.currentKanji.reading}`;
-
-    const meaningMessage = `Meaning: ${global.currentKanji.meaning}`;
-
-    // Display feedback and meaning
-    document.getElementById('feedback').innerHTML = `${feedbackMessage}<br>${meaningMessage}`;
-
-    // Play the corresponding sound
-    const feedbackSound = correct ? document.getElementById('correctSound') : document.getElementById('wrongSound');
-    feedbackSound.play();
-
-    updateScore(correct);
-
-    // Wait for feedback before moving to next card
-    setTimeout(() => nextCard(), 2000);
-}
-
+      : `❌ Wrong! Correct: ${currentKanji.reading}`;
+  
+    const meaningMessage = `Meaning: ${currentKanji.meaning}`;
+  
+    setFeedback(`${feedbackMessage}<br>${meaningMessage}`);
+    setIsFeedbackVisible(true); // Show feedback
+    setUserInput(''); // Clear input field
+    setDisableInput(true); // Disable input while feedback is shown
+  
+    // Play sound
+    if (correct) {
+      correctSound.current?.play();
+    } else {
+      wrongSound.current?.play();
+    }
+  
+    onScoreUpdate(correct);
+    onProgressUpdate();
+  
+    // ❗ Delay next card until feedback disappears
+    setTimeout(() => {
+      setIsFeedbackVisible(false); // Hide feedback
+      setFeedback('');
+      setDisableInput(false); // Re-enable input
+  
+      // ✅ Now update the kanji card
+      setCurrentKanji(getNextCard([...kanjiData]));
+    }, 2000);
+  };
+  
 
   function updateScore(correct) {
     if (correct) {
