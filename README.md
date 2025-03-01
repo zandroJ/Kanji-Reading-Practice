@@ -1,9 +1,7 @@
 
 ### Key Updates:
 1. **React-based App:** The app is now based on React, so the README mentions the steps to install dependencies using `npm`.
-2. **Development Server:** Instead of using `python -m http.server`, it mentions using `npm start` to run a React development server.
-3. **Project Structure:** Added a section describing the general structure of the project and the key folders like `components`, `assets`, and `data`.
-4. **JSON Data:** Clarified the structure of the JSON data used for the Kanji readings.
+2. **Development Server:** Instead of using `python -m http.server`, use `npm start` to run a React development server.
 
 
 # Kanji Reading Practice
