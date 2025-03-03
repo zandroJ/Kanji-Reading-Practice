@@ -104,7 +104,7 @@ const Quiz = ({ kanjiData, originalKanjiData, onScoreUpdate, onProgressUpdate })
       setIsFeedbackVisible(false);
       document.getElementById('answerInput').disabled = false;
       document.getElementById('answerInput').focus();
-    }, 1000);
+    }, 2000);
   };
 
   // Move to next card

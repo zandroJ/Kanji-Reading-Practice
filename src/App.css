@@ -16,24 +16,30 @@ body {
   display: flex; 
   flex-direction: column; 
   align-items: center; 
-  justify-content: flex-start; /* Align content at the top */
-  padding: 30px; /* Increased padding for better spacing */
+  justify-content: flex-start;
+  padding: 30px;
   width: 100%; 
-  max-width: 600px; /* To limit the width for larger screens */
-  
- 
-  font-size:20px;
+  max-width: 600px;
+  font-size: 20px;
+  position: relative; /* Add this */
 }
-
 /* Feedback text styling */
 .feedback {
-  margin: 20px 0; /* Add vertical spacing */
+  position: absolute; /* Position the feedback absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to truly center */
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  width: 100%;
-  min-height: 40px; /* Prevent layout shift when feedback appears */
+  background-color: rgba(30, 30, 30, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10; /* Ensure it appears above other content */
+  pointer-events: none; /* Allow clicks to pass through */
+  min-width: 300px; /* Ensure it doesn't look too small */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Update existing .card rule to remove font-size */
@@ -48,7 +54,8 @@ body {
   text-align: center;
   color: #ffffff;
   transition: transform 0.3s;
-  position: relative; /* Add this for absolute positioning */
+  position: relative;
+  overflow: hidden; /* Prevent long kanji from overflowing */
 }
 
 .card:hover {
@@ -83,17 +90,19 @@ body {
 
 /* Input field styling */
 input {
-  padding: 10px; 
-  font-size: 18px; 
-  margin: 10px; 
-  width: 200px; 
-  text-align: center; 
-  background-color: transparent; /* Transparent background */
-  color: #ffffff; /* Light text color */
-  border: none; /* Remove all borders */
-  border-bottom: 2px solid #ffffff; /* Add a subtle line at the bottom */
-  outline: none; /* Remove focus outline */
-  transition: border-color 0.3s; /* Smooth transition for the line */
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+  width: 300px; /* Increase the width */
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  transition: border-color 0.3s;
+  position:absolute;
+  left: 75px;
 }
 
 input:focus {
@@ -167,4 +176,27 @@ button:hover {
   font-weight: normal;
   width: 100%;
   position: static;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.feedback {
+  /* Existing styles */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.input-container {
+  position: fixed; /* Fix the input container in place */
+  bottom: 20%; /* Adjust this value to position it vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset to truly center */
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between input and button */
+  width: 100%; /* Take full width */
+  max-width: 400px; /* Limit width for larger screens */
+  padding: 0 20px; /* Add some padding */
 }
