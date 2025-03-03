@@ -8,28 +8,29 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  // Fetch Kanji data
   useEffect(() => {
     fetch('./kanji_data.json')
       .then((response) => response.json())
       .then((data) => {
         setKanjiData(data);
-        setOriginalKanjiData(JSON.parse(JSON.stringify(data)));
+        setOriginalKanjiData(data); // No need for JSON parse/stringify here
       })
       .catch((err) => console.error('Error loading JSON:', err));
   }, []);
 
-  // Update score
-  const updateScore = (correct) => {
-    if (correct) {
-      setScore(score + 1);
+  // Updated to handle card removal
+  const handleScoreUpdate = (isCorrect, kanji) => {
+    if (isCorrect) {
+      setKanjiData(prev => prev.filter(k => k.kanji !== kanji.kanji));
+      setScore(prev => prev + 1);
     }
   };
 
-  // Update progress
   const updateProgress = () => {
-    const newProgress = progress + 100 / originalKanjiData.length;
-    setProgress(Math.min(newProgress, 100));
+    setProgress(prev => {
+      const newProgress = prev + 100 / originalKanjiData.length;
+      return Math.min(newProgress, 100);
+    });
   };
 
   return (
@@ -44,7 +45,7 @@ const App = () => {
       <Quiz
         kanjiData={kanjiData}
         originalKanjiData={originalKanjiData}
-        onScoreUpdate={updateScore}
+        onScoreUpdate={handleScoreUpdate}  // Updated prop name
         onProgressUpdate={updateProgress}
       />
     </div>

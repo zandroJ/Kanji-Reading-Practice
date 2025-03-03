@@ -1,156 +1,171 @@
 import React, { useState, useEffect, useRef } from 'react';
 import KanjiCard from './KanjiCard';
+import Modal from './Modal'; // Import the Modal component
+
 
 const Quiz = ({ kanjiData, originalKanjiData, onScoreUpdate, onProgressUpdate }) => {
   const [currentKanji, setCurrentKanji] = useState(null);
   const [userInput, setUserInput] = useState('');
   const [feedback, setFeedback] = useState('');
-  const [isFeedbackVisible, setIsFeedbackVisible] = useState(false); // Add state to track feedback visibility
+  const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [finalScore, setFinalScore] = useState({ correct: 0, total: 0 });
 
   const correctSound = useRef(null);
   const wrongSound = useRef(null);
+  const kanjiDataRef = useRef(kanjiData);
+
+  // Sync ref with kanjiData updates
+  useEffect(() => {
+    kanjiDataRef.current = kanjiData;
+  }, [kanjiData]);
 
   // Initialize the game
   useEffect(() => {
-    if (kanjiData.length > 0) {
-      nextCard(kanjiData);
+    if (kanjiDataRef.current.length > 0 && !currentKanji) {
+      nextCard(kanjiDataRef.current);
     }
   }, [kanjiData]);
 
-  // Shuffle Kanji data
+  // Improved shuffle function
   const shuffle = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
     }
+    return newArray;
   };
-  function resetGame() {
-    global.score = 0;
-    global.progress = 0;
-    document.getElementById('score').textContent = '0';
-    document.getElementById('progress').style.width = '0%';
 
-    // Restore the original Kanji data and shuffle again
-    kanjiData.push(...global.originalKanjiData);
-    shuffle(kanjiData);
-  }
+  // Reset game properly
+  const resetGame = () => {
+    kanjiDataRef.current = [...originalKanjiData]; // Reset the kanji data
+    setCurrentKanji(null); // Clear the current kanji
+    setUserInput(''); // Clear the input field
+    setFeedback(''); // Clear feedback
+    setIsFeedbackVisible(false); // Hide feedback
+    setShowModal(false); // Hide modal if visible
+    setFinalScore({ correct: 0, total: 0 }); // Reset score
+    nextCard(kanjiDataRef.current); // Start a new game
+  };
 
-  // Get next card
+  // Get next card without repeats
   const getNextCard = (data) => {
     if (data.length === 0) {
-      alert(`Game Over! Your score: ${onScoreUpdate()}/${originalKanjiData.length}`);
-      resetGame();
+      setFinalScore({
+        correct: onScoreUpdate(),
+        total: originalKanjiData.length
+      });
+      setShowModal(true);
       return null;
     }
 
-    const kanji = data[Math.floor(Math.random() * data.length)];
-    const updatedData = data.filter((k) => k !== kanji);
-    shuffle(updatedData);
-    return kanji;
+    const shuffledData = shuffle(data);
+    return shuffledData[0];
   };
 
-  // Display Kanji
-const displayKanji = (kanji) => {
-  setCurrentKanji(kanji);
-  setUserInput('');
-  setFeedback('');
-  setIsFeedbackVisible(false);
-  
-  // Automatically focus input on new card
-  setTimeout(() => {
-    document.getElementById('answerInput').focus();
-  }, 100);
-};
+  // Display Kanji with proper cleanup
+  const displayKanji = (kanji) => {
+    setCurrentKanji(kanji);
+    setUserInput('');
+    setFeedback('');
+    setIsFeedbackVisible(false);
+    setTimeout(() => document.getElementById('answerInput')?.focus(), 100);
+  };
 
- // Check answer
-const checkAnswer = () => {
-  if (!currentKanji) return;
+  const checkAnswer = () => {
+    if (!currentKanji) return;
 
-  const userInputLower = userInput.trim().toLowerCase();
-  const correctReadings = currentKanji.reading.split(', ').map((r) => r.trim().toLowerCase());
-  const correct = correctReadings.includes(userInputLower);
+    const userInputLower = userInput.trim().toLowerCase();
+    // Split by comma first, then trim each reading
+    const correctReadings = currentKanji.reading.split(',').map(r => r.trim().toLowerCase());
+    const correct = correctReadings.includes(userInputLower);
 
-  const feedbackMessage = correct
-    ? `✅ Correct!`
-    : `❌ Wrong! Correct: ${currentKanji.reading}`;
+    setFeedback(correct ? `✅ Correct!<br>Meaning: ${currentKanji.meaning}` 
+                      : `❌ Wrong! Correct: ${currentKanji.reading}<br>Meaning: ${currentKanji.meaning}`);
+    setIsFeedbackVisible(true);
 
-  const meaningMessage = `Meaning: ${currentKanji.meaning}`;
+    // Disable input immediately
+    document.getElementById('answerInput').disabled = true;
 
-  setFeedback(`${feedbackMessage}<br>${meaningMessage}`);
-  setIsFeedbackVisible(true);
+    // Play sound
+    (correct ? correctSound : wrongSound).current.play();
 
-  // Play sound
-  if (correct) {
-    correctSound.current.play();
-  } else {
-    wrongSound.current.play();
-  }
-
-  onScoreUpdate(correct);
-  onProgressUpdate();
-
-  // Move to next card after 2 seconds
-  setTimeout(() => {
-    nextCard(kanjiData);
-    // Re-enable input and focus after state updates
+    // Update parent components after a short delay
     setTimeout(() => {
+      onScoreUpdate(correct, currentKanji);
+      onProgressUpdate();
+    }, 500); // Short delay before updating parent state
+
+    // Move to next card after 1 second
+    setTimeout(() => {
+      nextCard(kanjiDataRef.current);
+      setIsFeedbackVisible(false);
       document.getElementById('answerInput').disabled = false;
       document.getElementById('answerInput').focus();
-    }, 100);
-  }, 2000);
-};
-  // Next card
+    }, 1000);
+  };
+
+  // Move to next card
   const nextCard = (data) => {
     const nextKanji = getNextCard(data);
-    if (nextKanji) {
-      displayKanji(nextKanji);
-    }
+    if (nextKanji) displayKanji(nextKanji);
   };
 
-  // Handle input change
-  const handleInputChange = (e) => {
-    setUserInput(e.target.value);
+  // Input handlers
+  const handleInputChange = (e) => setUserInput(e.target.value);
+  const handleKeyDown = (e) => e.key === 'Enter' && checkAnswer();
+
+  // Modal functions
+  const closeModal = () => {
+    setShowModal(false);
+    resetGame();
   };
 
-  // Handle key down
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      checkAnswer();
+  const handleReset = () => {
+    if (window.confirm('Are you sure you want to reset the game?')) {
+      resetGame();
     }
   };
 
   return (
-    <div>
-      <KanjiCard kanji={currentKanji} />
-      <div className="input-container">
-        <input
-          type="text"
-          id="answerInput"
-          placeholder="Type pronunciation"
-          value={userInput}
-          onChange={handleInputChange}
-          onKeyDown={handleKeyDown}
-          autoComplete="off"
-          disabled={isFeedbackVisible} // Disable input if feedback is visible
-        />
-        <button 
-          id="submitButton" 
-          onClick={checkAnswer}
-          disabled={isFeedbackVisible} // Disable button if feedback is visible
-        >
-          Submit
-        </button>
-        <button id="nextButton" hidden>
-          Next Card
-        </button>
-      </div>
-      <p className="feedback" id="feedback" dangerouslySetInnerHTML={{ __html: feedback }}></p>
+     <div>
+    <KanjiCard kanji={currentKanji} />
+    
+    {isFeedbackVisible && (
+      <p className="feedback" dangerouslySetInnerHTML={{ __html: feedback }} />
+    )}
 
-      {/* Audio elements */}
-      <audio ref={correctSound} src="audio/correct.mp3"></audio>
-      <audio ref={wrongSound} src="audio/wrong.mp3"></audio>
+    <div className="input-container">
+      <input
+        type="text"
+        id="answerInput"
+        placeholder="Type pronunciation"
+        value={userInput}
+        onChange={handleInputChange}
+        onKeyDown={handleKeyDown}
+        autoComplete="off"
+        disabled={isFeedbackVisible}
+      />
+      <button 
+        onClick={checkAnswer}
+        disabled={isFeedbackVisible}
+      >
+        Submit
+      </button>
     </div>
+
+    <audio ref={correctSound} src="audio/correct.mp3" />
+    <audio ref={wrongSound} src="audio/wrong.mp3" />
+
+    {showModal && (
+      <Modal
+        score={finalScore.correct}
+        total={finalScore.total}
+        onClose={closeModal}
+      />
+    )}
+  </div>
   );
 };
 
