@@ -104,7 +104,12 @@ input {
   position:absolute;
   left: 75px;
 }
-
+@media (max-width: 768px) {
+  input {
+    width: 90%; /* Wider on smaller screens */
+    max-width: 300px; /* Adjust max-width for mobile */
+  }
+}
 input:focus {
   border-bottom: 2px solid #4c4f4c; /* Green line when focused */
 }
