@@ -23,7 +23,9 @@ const App = () => {
     if (isCorrect) {
       setKanjiData(prev => prev.filter(k => k.kanji !== kanji.kanji));
       setScore(prev => prev + 1);
+      return score + 1; // Return the updated score
     }
+    return score; // Return the current score if not correct
   };
 
   const updateProgress = () => {
@@ -43,11 +45,11 @@ const App = () => {
         <div className="progress" style={{ width: `${progress}%` }}></div>
       </div>
       <Quiz
-        kanjiData={kanjiData}
-        originalKanjiData={originalKanjiData}
-        onScoreUpdate={handleScoreUpdate}  // Updated prop name
-        onProgressUpdate={updateProgress}
-      />
+  kanjiData={kanjiData}
+  originalKanjiData={originalKanjiData}
+  onScoreUpdate={handleScoreUpdate} // Ensure this is passed correctly
+  onProgressUpdate={updateProgress}
+/>
     </div>
   );
 };

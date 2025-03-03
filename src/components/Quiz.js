@@ -52,14 +52,15 @@ const Quiz = ({ kanjiData, originalKanjiData, onScoreUpdate, onProgressUpdate })
   // Get next card without repeats
   const getNextCard = (data) => {
     if (data.length === 0) {
+      const currentScore = onScoreUpdate(); // Get the current score
       setFinalScore({
-        correct: onScoreUpdate(),
+        correct: currentScore, // Use the returned score
         total: originalKanjiData.length
       });
       setShowModal(true);
       return null;
     }
-
+  
     const shuffledData = shuffle(data);
     return shuffledData[0];
   };
