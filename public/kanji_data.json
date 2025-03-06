@@ -741,16 +741,16 @@
 {"kanji":"急ぐ","reading":"isogu","meaning":"hurry/fasten"},
 
 
-{"kanji":"急に","reading":"kyūni","meaning":"sudden"},
-{"kanji":"急","reading":"kyū","meaning":"dire/pressing/urgent"},
-{"kanji":"急行","reading":"kyūkō","meaning":"express train, going in a hurry"},
+{"kanji":"急に","reading":"kyuni","meaning":"sudden"},
+{"kanji":"急","reading":"kyuu","meaning":"dire/pressing/urgent"},
+{"kanji":"急行","reading":"kyuukou","meaning":"express train, going in a hurry"},
 {"kanji":"切れる","reading":"kireru","meaning":"can cut, expire, run out"},
 {"kanji":"切手","reading":"kitte","meaning":"stamp"},
 {"kanji":"売り切れる","reading":"urikireru","meaning":"to be out of stock, be sold out"},
 {"kanji":"売り切れ","reading":"urikire","meaning":"sold out"},
 {"kanji":"大切","reading":"taisetsu","meaning":"important"},
 {"kanji":"切符","reading":"kippu","meaning":"ticket"},
-{"kanji":"入場券","reading":"nyūjōken","meaning":"entrance ticket"},
+{"kanji":"入場券","reading":"nyuujouken","meaning":"entrance ticket"},
 {"kanji":"家賃","reading":"yachin","meaning":"rent"},
 {"kanji":"時代","reading":"jidai","meaning":"age/antiquity"},
 {"kanji":"代わる","reading":"kawaru","meaning":"substitute"},
@@ -760,14 +760,14 @@
 {"kanji":"一定","reading":"ittei","meaning":"constant, standard"},
 {"kanji":"定期券","reading":"teikiken","meaning":"commuter's pass"},
 {"kanji":"予定","reading":"yotei","meaning":"schedule, plan"},
-{"kanji":"天気予報","reading":"tenkiyohō","meaning":"weather forecast"},
-{"kanji":"予習","reading":"yoshū","meaning":"preparation, previewing"},
+{"kanji":"天気予報","reading":"tenkyohou","meaning":"weather forecast"},
+{"kanji":"予習","reading":"yoshuu","meaning":"preparation, previewing"},
 {"kanji":"予約","reading":"yoyaku","meaning":"reservation, subscription"},
 {"kanji":"約束","reading":"yakusoku","meaning":"promise"},
 {"kanji":"大変","reading":"taihen","meaning":"awful, serious"},
 {"kanji":"変","reading":"hen","meaning":"weird, funny"},
 {"kanji":"変化","reading":"henka","meaning":"change"},
-{"kanji":"強化","reading":"kyōka","meaning":"strengthening"},
+{"kanji":"強化","reading":"kyouka","meaning":"strengthening"},
 {"kanji":"増える","reading":"fueru","meaning":"increase, accrue"},
 {"kanji":"増やす","reading":"fuyasu","meaning":"increase, add"},
 {"kanji":"減る","reading":"heru","meaning":"decrease, diminish"},
@@ -785,6 +785,6 @@
 {"kanji":"目立つ","reading":"medatsu","meaning":"stand out, be conspicuous"},
 {"kanji":"立てる","reading":"tateru","meaning":"stand, set up, establish"},
 {"kanji":"役に立つ","reading":"yakunitatsu","meaning":"to be useful"},
-{"kanji":"出席","reading":"shusseki","meaning":"attendance, presence"}
+{"kanji":"出席","reading":"shuuseki","meaning":"attendance, presence"}
 
   ]
